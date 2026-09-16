@@ -1,12 +1,12 @@
 section header {
   border-top: 1px solid var(--stroke-color);
-  padding-block: 12px 24px;
+  padding-block: var(--spacing-md) var(--spacing-lg);
   font: var(--text-span);
 
   a {
     justify-self: end;
     align-items: center;
-    gap: 16px;
+    gap: var(--spacing-md);
 
     span {
       background-image: url(../assets/icons/ArrowRight.svg);
@@ -30,9 +30,9 @@ section header {
   }
 
   .card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
 
   &::before {
     content: "";
@@ -45,15 +45,15 @@ section header {
   figcaption {
     position: absolute;
     bottom: 0;
-    padding: 24px;
+    padding: var(--spacing-lg);
     
     /* Está producurando a class .text-lg que está dentro do figcaption e aplicando um padding de 12px */
     &:has(.text-lg) {
-      padding: 12px;
+      padding: var(--spacing-md);
     }
 
     h2 {
-      margin-top: 8px;
+      margin-top: var(--spacing-sm);
     }
   }
 }

@@ -13,7 +13,11 @@
 }
 
 .gap-16 {
-  gap: 16px;
+  gap: var(--spacing-md);
+}
+
+.gap-32 {
+  gap: var(--spacing-xl);
 }
 
 .text-2xl {

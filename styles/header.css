@@ -1,10 +1,11 @@
 #primary {
   padding-block: 20px;
+  /* justify-content: space-between; */
 
   div {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--spacing-sm);
   }
 
   /* nesting css */
@@ -19,7 +20,7 @@
 }
 
 #secondary {
-  padding-block: 14px;
+  padding-block: var(--spacing-lg);
   border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
